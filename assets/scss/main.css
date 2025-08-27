@@ -37,7 +37,7 @@
 }
 .our-team-section .expert-driver-card .card-img {
   position: relative;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 .our-team-section .expert-driver-card .card-img img {
   width: 100%;
@@ -47,18 +47,18 @@
   background: #FFFFFF;
   padding: 10px;
   position: absolute;
-  left: 0;
+  left: 10px;
   bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
   opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  transition: all 0.5s ease;
 }
 .our-team-section .expert-driver-card :hover .social-icons {
   opacity: 1;
-  visibility: visible;
+  z-index: 1;
 }
 .our-team-section .expert-driver-card .card-title {
   padding: 10px 15px;
