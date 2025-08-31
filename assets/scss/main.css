@@ -169,7 +169,7 @@
   position: absolute;
   bottom: -125px;
   background: #FFFFFF;
-  margin: 0 30px 0 20px;
+  margin: 0 25px 0 20px;
   padding: 30px 25px;
   box-shadow: 1px 2px 2px rgba(194, 194, 194, 0.25);
 }
@@ -184,7 +184,7 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin: auto 20px;
+  margin: auto 20px auto 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -211,6 +211,31 @@
   justify-content: space-between;
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.faq-section .faq-section-heading .top-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FF6314;
+}
+.faq-section .faq-section-heading .icon-wrapper {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+}
+.faq-section .faq-section-heading p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: "inter", sans-serif;
+  margin: auto 0;
+}
+.faq-section .faq-section-heading .second-heading h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
 }
 
 .pb-50 {
