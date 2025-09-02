@@ -461,6 +461,65 @@
 	// 	});
 	// });
 
+	// $('.question-answer').hide();
 
+	// $('.expand-icon').on('click', function () {
+	// 	$(this).next('.question-answer').show();
+	// });
+
+	// find items in a array 
+	// add and remove classlist of array items
+
+	// const expandIcons = $('.expand-icon');
+	// const questionAnswers = $('p.question-answer');
+	// const questionCount = expandIcons.length;
+	// console.log(expandIcons)
+	// console.log(questionAnswers)
+	// questionAnswers.addClass('expand-answer');
+
+	// expandIcons.map((expandIcon, questionCount) => {
+	// 	expandIcon.on('mouseenter', function () {
+	// 		questionAnswers.eq(questionCount).toggleClass('expand-answer');
+	// 	});
+	// })
+
+	// expandIcons[0].on('click', () => {
+	// 	questionAnswers[0].addClass('expand-answer');
+	// });
+
+	// console.log(expandIcons[0]);
+
+	// expandIcons[0].click(() => {
+	// 	console.log('Clicked.');
+	// })
+
+	// expandIcons[0].click(() => {
+	// 	console.log('clicked');
+	// 	questionAnswers[0].addClass('expand-answer');
+	// });
+
+	const allIcons = document.querySelectorAll('.expand-icon');
+	// console.log(allIcons[0]);
+	const allIconsCount = allIcons.length;
+
+	const allQuestionAnswers = document.querySelectorAll('p.question-answer');
+
+	// allIcons[0].addEventListener('click', () => {
+	// 	console.log('Clicked.');
+	// 	allQuestionAnswers[0].classList.toggle('expand-answer');
+	// });
+
+	allIcons.forEach((icon, allIconsCount) => {
+		// console.log('forEach-working')
+		icon.addEventListener('click', () => {
+			allQuestionAnswers.forEach(answer => {
+				answer.classList.remove('expand-answer')
+				// console.log('Removed class from all answers.');
+				// console.log(answer);
+			});
+			// console.log(`Clicked icon ${allIconsCount + 1}.`);
+			allQuestionAnswers[allIconsCount].classList.toggle('expand-answer');
+		});
+	});
 
 })(jQuery);

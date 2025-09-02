@@ -232,10 +232,51 @@
   font-family: "inter", sans-serif;
   margin: auto 0;
 }
+.faq-section .faq-section-heading .second-heading {
+  padding: 0 100px;
+}
 .faq-section .faq-section-heading .second-heading h2 {
   font-size: 64px;
   font-weight: 600;
   line-height: 120%;
+}
+.faq-section .questions-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.faq-section .questions-wrapper .question {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.faq-section .questions-wrapper .answer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.faq-section .questions-wrapper .question-title {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 136%;
+}
+.faq-section .questions-wrapper .expand-icon {
+  padding: 0 20px;
+  cursor: pointer;
+}
+.faq-section .questions-wrapper p.question-answer {
+  margin: 0 40px 20px 40px;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  cursor: pointer;
+  display: none;
+}
+.faq-section .questions-wrapper p.expand-answer {
+  display: block;
 }
 
 .pb-50 {
