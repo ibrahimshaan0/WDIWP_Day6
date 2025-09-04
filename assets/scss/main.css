@@ -5,6 +5,83 @@
   box-sizing: border-box;
 }
 
+.about-us-home-2 .about-us-section-content {
+  display: flex;
+}
+.about-us-home-2 .about-us-img-wrapper {
+  display: flex;
+  width: 100%;
+}
+.about-us-home-2 .about-us-img-wrapper .left-img {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+  width: 70%;
+}
+.about-us-home-2 .about-us-img-wrapper .left-img img {
+  width: 100%;
+  height: auto;
+}
+.about-us-home-2 .about-us-img-wrapper .left-img img:nth-child(1) {
+  margin-bottom: 12px;
+}
+.about-us-home-2 .about-us-img-wrapper .left-img img:nth-child(2) {
+  margin-top: 12px;
+}
+.about-us-home-2 .about-us-img-wrapper .right-img {
+  margin: 0 12px;
+  width: 50%;
+}
+.about-us-home-2 .about-us-img-wrapper .right-img img {
+  height: 605px;
+}
+.about-us-home-2 .about-us-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+}
+.about-us-home-2 .top-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FF6314;
+}
+.about-us-home-2 .icon-wrapper {
+  height: 32px;
+  width: 32px;
+  padding: 5px;
+}
+.about-us-home-2 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: "inter", sans-serif;
+  margin: auto 0;
+}
+.about-us-home-2 .second-heading h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.about-us-home-2 .about-us-achievements {
+  display: flex;
+}
+.about-us-home-2 .about-us-achievements h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 136%;
+}
+.about-us-home-2 .about-read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #FF6314;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .our-team-section {
   background: rgba(0, 0, 0, 0.02);
 }
@@ -130,28 +207,36 @@
 .training-video-section {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px auto;
-  background-image: url(../img/bg-img/training-section-bg.png);
+  margin: 0 auto;
+  background: url(../img/bg-img/training-section-bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.training-video-section::after {
-  content: "";
+.training-video-section .train-vid-sec-bg {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.training-video-section .train-vid-sec-main-content {
+  position: relative;
+  z-index: 2;
 }
 .training-video-section .training-video-title-row {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 }
 .training-video-section .training-video-title {
   font-size: 64px;
@@ -159,7 +244,7 @@
   line-height: 120%;
   color: white;
   text-align: center;
-  margin: 100px auto;
+  margin: 0 auto 100px auto;
 }
 .training-video-section .tv-play-icon {
   display: flex;
