@@ -111,6 +111,12 @@
 .our-team-section .expert-driver-card-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .our-team-section .expert-driver-card {
+    margin-bottom: 24px;
+  }
 }
 .our-team-section .expert-driver-card .card-img {
   position: relative;
@@ -161,6 +167,7 @@
 .at-a-glance-section .glance-card-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .at-a-glance-section .at-a-glance-heading {
   margin-bottom: 30px;
@@ -179,6 +186,11 @@
   align-items: center;
   padding: 50px 0;
   margin: 0 8px;
+}
+@media (max-width: 768px) {
+  .at-a-glance-section .glance-card {
+    margin-bottom: 30px;
+  }
 }
 .at-a-glance-section .glance-card .icon-wrapper {
   height: 64px;
@@ -347,10 +359,16 @@
 .latest-news-section .latest-news-card-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .latest-news-section .latest-news-card {
   position: relative;
   margin: 0 10px;
+}
+@media (max-width: 768px) {
+  .latest-news-section .latest-news-card {
+    margin-bottom: 150px;
+  }
 }
 .latest-news-section .latest-news-card .latest-news-img img {
   width: 100%;
