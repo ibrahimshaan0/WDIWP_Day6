@@ -5,8 +5,25 @@
   box-sizing: border-box;
 }
 
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: currenteColor;
+}
+
+.fb-icon {
+  font-size: 26px;
+  color: #0567E1;
+}
+
+.ldin-icon {
+  color: #0A66C2;
+}
+
 .about-us-home-2 .about-us-section-content {
   display: flex;
+  flex-wrap: wrap;
 }
 .about-us-home-2 .about-us-img-wrapper {
   display: flex;
@@ -139,6 +156,10 @@
   z-index: -1;
   transition: all 0.5s ease;
 }
+.our-team-section .expert-driver-card .social-icons a {
+  height: 32px;
+  margin: 0;
+}
 .our-team-section .expert-driver-card :hover .social-icons {
   opacity: 1;
   z-index: 1;
@@ -219,13 +240,13 @@
 .training-video-section {
   position: relative;
   width: 100%;
-  height: 530px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   background: url(../img/bg-img/training-section-bg.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -422,8 +443,118 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+footer {
+  border: 1px solid black;
+  padding: 20px;
+}
+footer .d-col-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+footer .ds-col {
+  padding: 50px;
+}
+footer .site-logo {
+  margin: 20px 0;
+  width: 150px;
+  height: auto;
+}
+footer .site-logo img {
+  width: 100%;
+  height: auto;
+}
+footer .site-newsletter p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 10px 0;
+  color: #70747D;
+}
+footer .newsletter-mail {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+footer .newsletter-mail input {
+  padding: 10px 20px;
+  border: none;
+}
+footer .newsletter-mail a {
+  color: #FFFFFF;
+  padding: 10px 20px;
+  background-color: #FF6314;
+}
+footer .footer-1-spacer {
+  height: 120px;
+}
+footer .contact-social-info .req-demo p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 10px 0;
+  color: #000000;
+}
+footer .contact-social-info .social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .contact-social-info .social-links .social-link {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.05);
+  transition: 0.5s ease;
+}
+footer .contact-social-info .social-links .social-link:hover {
+  color: #FFFFFF;
+  background-color: #FF6314;
+}
+footer .contact-social-info .social-links .social-link a {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .top-links,
+footer .links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .top-links a,
+footer .links-wrapper a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #70747D;
+}
+footer .ds-col-3,
+footer .ds-col-4 {
+  display: flex;
+  flex-direction: column;
+}
+footer .spacer-70 {
+  height: 70px;
+}
+footer .spacer-130 {
+  height: 130px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
 .pb-50 {
   padding-bottom: 50px;
+}
+
+.pb-250 {
+  padding-bottom: 250px;
 }
 
 .py-120 {
