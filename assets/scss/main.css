@@ -356,28 +356,36 @@ a:focus {
 .latest-news-section {
   background: rgba(0, 0, 0, 0.02);
 }
-.latest-news-section .latest-news-heading .top-heading {
+.latest-news-section .latest-news-heading {
+  margin-bottom: 50px;
+}
+.latest-news-section .latest-news-heading .sub-heading {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #FF6314;
+  margin-bottom: 12px;
 }
 .latest-news-section .latest-news-heading .icon-wrapper {
   height: 32px;
   width: 32px;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 .latest-news-section .latest-news-heading p {
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
-  font-family: "inter", sans-serif;
   margin: auto 0;
 }
-.latest-news-section .latest-news-heading .second-heading h2 {
+.latest-news-section .latest-news-heading .heading h2 {
   font-size: 64px;
   font-weight: 600;
   line-height: 120%;
+  color: #111827;
 }
 .latest-news-section .latest-news-card-wrapper {
   display: flex;
@@ -386,7 +394,6 @@ a:focus {
 }
 .latest-news-section .latest-news-card {
   position: relative;
-  margin: 0 10px;
 }
 @media (max-width: 768px) {
   .latest-news-section .latest-news-card {
@@ -444,6 +451,12 @@ a:focus {
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.05);
 }
+.latest-news-section .ln-card-1 {
+  margin: 0 24px 0 0;
+}
+.latest-news-section .ln-card-3 {
+  margin: 0 0 0 24px;
+}
 
 .course-package-section .course-package-main-area {
   overflow-x: hidden;
@@ -497,6 +510,9 @@ a:focus {
   padding: 15px 30px;
   color: #FFFFFF;
   margin: 0 10px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
 }
 .course-package-section .course-package-main-area .navigation-buttons .pkg-btn {
   background-color: #FF6314;
@@ -513,17 +529,17 @@ a:focus {
   height: auto;
 }
 .course-package-section .course-package-main-area .course-package-sec-imgs .img-1-wrapper {
-  width: 175px;
+  width: 178px;
   position: absolute;
-  right: 50px;
+  right: 60px;
   top: -50px;
   z-index: 3;
 }
 .course-package-section .course-package-main-area .course-package-sec-imgs .img-2-wrapper {
   width: 857px;
   position: absolute;
-  right: -185px;
-  top: -30px;
+  right: -186px;
+  top: -25px;
 }
 
 footer {
@@ -538,6 +554,7 @@ footer .d-col-wrapper {
 }
 footer .ds-col {
   padding: 50px 0;
+  height: 623px;
 }
 footer .ds-col-1 {
   width: 516px;
@@ -574,6 +591,10 @@ footer .newsletter-mail a {
   color: #FFFFFF;
   padding: 10px 25px;
   background-color: #FF6314;
+  font-family: "Satoshi", sans-serif !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
 }
 footer .contact-social-info {
   margin-top: 129px;
@@ -652,7 +673,7 @@ footer .footer-address {
   margin-top: 100px;
 }
 footer .footer-copyright {
-  margin-top: 150px;
+  margin-top: 140px;
 }
 
 .pt-120 {

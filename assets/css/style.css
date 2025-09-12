@@ -1,8 +1,22 @@
 @font-face {
   font-family: "remixicon";
   src: url("../fonts/rimixicon/remixicon.woff2") format("woff2"),
-       url("../fonts/rimixicon/remixicon.woff") format("woff"),
-       url("../fonts/rimixicon/remixicon.ttf") format("truetype");
+    url("../fonts/rimixicon/remixicon.woff") format("woff"),
+    url("../fonts/rimixicon/remixicon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/satoshi/Satoshi-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: bold;
+  src: url("../fonts/satoshi/Satoshi-Bold.otf") format("opentype");
 }
